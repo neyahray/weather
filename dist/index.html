@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="circle"></div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h1>M&R</h1>
+            <ul>
+                <li><a href='#' class="report">Прогноз</a></li>
+                <li><a href="#" class="settings">Темная тема</a></li>
+                <li><a href="#" class="info">Информация</a></li>
+            </ul>
+        </aside>
+
+        
+        <div class="project">
+            <h2>Информация о проекте</h2>
+
+            <p>
+                M&R - это учебный проект, написанный на нативном JS с использованием
+                fetch API. Он позволяет узнать прогноз погоды на сегодняшний день и
+                ближайшую неделю. Дизайн проекта был составлен с использованием ChatGPT.
+
+                <br>
+                API: <a href="https://open-meteo.com/">open-meteo</a>
+            </p>
+        </div>
+
+        <main class="weather">
+            <section class="current-weather">
+                <h2>Погода сегодня</h2>
+                <div class="weather-info">
+                    <div class="weather-icon">
+                        <img class="weather-img-main" src="assets/компас.png" alt="Погода сегодня">
+                    </div>
+                    <div class="temperature">
+                        <p class="celcius-value">Сейчас: ... </p>
+                        <p class="rain-value">Дождь: ... </p>
+                        <p class="snow-cm-value">Уровень снега: ... </p>
+                        <p class="cloud-cover-value">Облачность: ... </p>
+                        <p class="wind-value">Скорость ветра: ...  </p>
+                    </div>
+                </div>
+            </section>
+            <section class="weekly-forecast">
+                <h2>Прогноз на неделю</h2>
+                <ul class="forecast-list">
+                    <li>
+                        <img class="weather-img" src="assets/компас.png">
+                        <p class="daily-temperature">...</p>
+                        <p class="daily-date">...</p>
+                    </li>
+                    <li>
+                        <img class="weather-img" src="assets/компас.png">
+                        <p class="daily-temperature">...</p>
+                        <p class="daily-date">...</p>
+                    </li>
+                    <li>
+                        <img class="weather-img" src="assets/компас.png">
+                        <p class="daily-temperature">...</p>
+                        <p class="daily-date">...</p>
+                    </li>
+                    <li>
+                        <img class="weather-img" src="assets/компас.png">
+                        <p class="daily-temperature">...</p>
+                        <p class="daily-date">...</p>
+                    </li>
+                    <li>
+                        <img class="weather-img" src="assets/компас.png">
+                        <p class="daily-temperature">...</p>
+                        <p class="daily-date">...</p>
+                    </li>
+                    <li>
+                        <img class="weather-img" src="assets/компас.png">
+                        <p class="daily-temperature">...</p>
+                        <p>...</p>
+                    </li>
+
+                    <li>
+                        <img class="weather-img" src="assets/компас.png">
+                        <p class="daily-temperature">...</p>
+                        <p>...</p>
+                    </li>
+                    
+                    <!-- Добавьте остальные дни недели -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
